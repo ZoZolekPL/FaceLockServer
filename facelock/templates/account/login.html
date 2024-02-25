@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+Logowanie
+{% endblock%}
+
+{% block main %}
+
+<div id="loginForm">
+
+  <form action="." method="post">
+    {{form.as_p}}
+    {%csrf_token %}
+    <p><input type="submit" value="Zaloguj"/> </p>
+  </form>
+</div>
+
+{% endblock%}
